@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>香港 3 天 2 夜隨身旅遊手冊 (2026/10/10 - 10/12)</title>
+  <title>BIGBANG 香港演唱會 2 天 1 夜快閃手冊 (2026/11/17 - 11/18)</title>
   <style>
     :root {
-      --primary: #c82333;
-      --primary-dark: #a71d2a;
+      --primary: #d4af37;
+      --primary-dark: #b59020;
       --secondary: #17a2b8;
       --secondary-dark: #117a8b;
-      --accent: #d63384;
-      --bg: #f4f6f8;
-      --card-bg: #ffffff;
-      --text: #212529;
-      --text-muted: #6c757d;
-      --border: #e9ecef;
-      --badge-bg: #eef2f7;
+      --accent: #e11d48;
+      --bg: #121212;
+      --card-bg: #1e1e1e;
+      --text: #f8f9fa;
+      --text-muted: #adb5bd;
+      --border: #333333;
+      --badge-bg: #2c2c2c;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -27,45 +27,80 @@
       padding-bottom: 60px;
     }
     header {
-      background: linear-gradient(135deg, #b21f2d, #e52d27);
+      background: linear-gradient(135deg, #1a1a1a, #3a2d0b);
+      border-bottom: 2px solid var(--primary);
       color: #fff;
       padding: 22px 16px;
       text-align: center;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     }
-    header h1 { font-size: 1.25rem; font-weight: 700; margin-bottom: 4px; }
-    header p { font-size: 0.82rem; opacity: 0.92; }
+    header h1 { font-size: 1.22rem; font-weight: 700; color: var(--primary); margin-bottom: 4px; letter-spacing: 0.5px; }
+    header p { font-size: 0.82rem; color: #e2e8f0; }
     .container { max-width: 720px; margin: 0 auto; padding: 12px; }
     
+    .flight-card {
+      background: #1b222c;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 14px;
+      font-size: 0.84rem;
+    }
+    .flight-card h4 { font-size: 0.94rem; color: #38bdf8; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+    .flight-block {
+      padding: 8px 0;
+      border-bottom: 1px dashed #334155;
+    }
+    .flight-block:last-child { border-bottom: none; padding-bottom: 0; }
+    .flight-header-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .flight-tag {
+      background: #0284c7;
+      color: #fff;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+    }
+    .flight-tag.ret { background: #e11d48; }
+    .flight-meta { color: #94a3b8; font-size: 0.76rem; }
+    .flight-route { color: #f8fafc; font-weight: 600; font-size: 0.86rem; }
+
     .notice-card {
-      background: #fff8e1;
-      border: 1px solid #ffe082;
+      background: #262112;
+      border: 1px solid #665214;
       border-radius: 8px;
       padding: 12px 14px;
       margin-bottom: 16px;
-      font-size: 0.85rem;
-      color: #5d4037;
+      font-size: 0.84rem;
+      color: #fef3c7;
     }
-    .notice-card h4 { font-size: 0.92rem; color: #b78103; margin-bottom: 6px; display: flex; align-items: center; gap: 4px; }
+    .notice-card h4 { font-size: 0.92rem; color: var(--primary); margin-bottom: 6px; }
     .notice-card ul { padding-left: 18px; margin-top: 4px; }
     .notice-card li { margin-bottom: 4px; }
 
     .day-header {
-      background: #2b303a;
+      background: linear-gradient(90deg, #2b2615, #1f1f1f);
+      border-left: 4px solid var(--primary);
       color: #fff;
       padding: 10px 14px;
-      border-radius: 8px;
+      border-radius: 6px;
       margin: 22px 0 12px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
     }
-    .day-header span { font-size: 0.98rem; font-weight: 700; }
-    .day-header small { font-size: 0.78rem; opacity: 0.85; background: rgba(255,255,255,0.15); padding: 2px 8px; border-radius: 12px; }
+    .day-header span { font-size: 0.96rem; font-weight: 700; color: #f8fafc; }
+    .day-header small { font-size: 0.75rem; color: var(--primary); background: rgba(212, 175, 55, 0.15); padding: 2px 8px; border-radius: 12px; font-weight: 600; }
 
     .card {
       background: var(--card-bg);
@@ -73,7 +108,7 @@
       border-radius: 8px;
       margin-bottom: 12px;
       padding: 14px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
     .card-top {
       display: flex;
@@ -83,22 +118,22 @@
     }
     .time-badge {
       background: var(--badge-bg);
-      color: #343a40;
+      color: var(--primary);
+      border: 1px solid #444;
       padding: 3px 8px;
       border-radius: 4px;
       font-size: 0.76rem;
       font-weight: 700;
-      letter-spacing: 0.3px;
     }
     .card-title {
       font-size: 1.02rem;
       font-weight: 700;
-      color: #1a1a1a;
+      color: #ffffff;
       margin-bottom: 8px;
     }
     .info-row {
       font-size: 0.84rem;
-      color: #495057;
+      color: #cbd5e1;
       margin-bottom: 6px;
       display: flex;
       align-items: flex-start;
@@ -106,15 +141,15 @@
     }
     .info-label {
       font-weight: 600;
-      color: #212529;
+      color: #94a3b8;
       min-width: 68px;
       flex-shrink: 0;
     }
     .tips-box {
-      background: #fdf2f8;
+      background: #2a1820;
       border-left: 3px solid var(--accent);
-      color: #701a75;
-      padding: 6px 10px;
+      color: #fecdd3;
+      padding: 7px 10px;
       border-radius: 0 4px 4px 0;
       font-size: 0.82rem;
       margin: 8px 0;
@@ -125,7 +160,7 @@
       flex-wrap: wrap;
       gap: 6px;
       margin-top: 10px;
-      padding-top: 6px;
+      padding-top: 8px;
       border-top: 1px dashed var(--border);
     }
     .map-btn {
@@ -133,479 +168,193 @@
       align-items: center;
       gap: 4px;
       background-color: var(--primary);
-      color: #fff;
+      color: #111;
       text-decoration: none;
       padding: 5px 12px;
       border-radius: 20px;
-      font-size: 0.74rem;
-      font-weight: 600;
+      font-size: 0.75rem;
+      font-weight: 700;
       transition: background 0.15s ease-in-out;
     }
     .map-btn:hover { background-color: var(--primary-dark); }
-    .map-btn.teal { background-color: var(--secondary); }
+    .map-btn.teal { background-color: var(--secondary); color: #fff; }
     .map-btn.teal:hover { background-color: var(--secondary-dark); }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>🇭🇰 香港 3 天 2 夜隨身旅遊手冊</h1>
-    <p>2026/10/10 (六) - 10/12 (一) ｜ 住宿：香港金鐘毅風</p>
+    <h1>👑 BIGBANG 香港演唱會 24H 快閃手冊</h1>
+    <p>2026/11/17 (二) - 11/18 (三) ｜ 住：上環薈麗酒店</p>
   </header>
 
   <div class="container">
 
-    <!-- 核心交通樞紐提示 -->
+    <!-- 航班資訊卡片 -->
+    <div class="flight-card">
+      <h4>✈️ 往返航班資訊（大灣區航空 GBA）</h4>
+      
+      <div class="flight-block">
+        <div class="flight-header-line">
+          <span class="flight-tag">去程｜11月17日 (週二)</span>
+          <span class="flight-meta">大灣區航空 HB703 ｜ 波音 737 ｜ 2小時5分</span>
+        </div>
+        <div class="flight-route">11:35 台北桃園 (TPE) T1 ➔ 13:40 香港 (HKG) T1</div>
+      </div>
+
+      <div class="flight-block">
+        <div class="flight-header-line">
+          <span class="flight-tag ret">回程｜11月18日 (週三)</span>
+          <span class="flight-meta">大灣區航空 HB702 ｜ 波音 737 ｜ 1小時50分</span>
+        </div>
+        <div class="flight-route">08:45 香港 (HKG) T2 ➔ 10:35 台北桃園 (TPE) T1</div>
+      </div>
+    </div>
+
+    <!-- 核心住宿與入場提示 -->
     <div class="notice-card">
-      <h4>📌 行前必存：核心交通指引</h4>
+      <h4>📌 住宿與 17:00 進場關鍵提示</h4>
       <ul>
-        <li><strong>金鐘毅風 ⇋ 港鐵金鐘站（全冷氣通道）</strong>：出飯店過馬路至斜對面「太古廣場三座（Three Pacific Place）」，搭手扶梯下樓直通金鐘站 F 出口通道，<strong>全程步行僅 6～8 分鐘</strong>。</li>
-        <li><strong>門口叮叮車指南</strong>：後門上車、前門下車刷八達通（劃一票價 HK$3.0）。
-          <ul>
-            <li><strong>西行（往中環／上環）</strong>：出門過馬路至「機利臣街 41W」或「分域街 43W」站。</li>
-            <li><strong>東行（往銅鑼灣／天后）</strong>：飯店同側路口即為「分域街 54E」站。</li>
-          </ul>
-        </li>
+        <li><strong>超省力順路動線</strong>：下機先回上環飯店放行李 ➔ 步行 6 分鐘去<strong>珍妮曲奇上環店</strong>買餅乾放回房間 ➔ 兩手空空輕裝前往啟德看演唱會！</li>
+        <li><strong>住宿地址</strong>：Lander Grand Hotel（薈麗酒店）— <strong>香港島上環干諾道西 7 號順華樓</strong>（港鐵上環站 C 出口步行 4 分鐘）。</li>
+        <li><strong>安檢規定</strong>：嚴禁攜帶長柄雨傘、超過 <code>35×20×30 cm</code> 大包及瓶裝水入場。</li>
       </ul>
       <div class="btn-group" style="border: none; padding-top: 4px;">
-        <a class="map-btn teal" href="https://www.google.com/maps/search/?api=1&query=YING’nFLO+Wesley+Admiralty+Hong+Kong" target="_blank">導航至金鐘毅風飯店</a>
+        <a class="map-btn teal" href="https://www.google.com/maps/search/?api=1&query=Lander+Grand+Hotel+香港上環干諾道西7號" target="_blank">導航至上環薈麗酒店</a>
       </div>
     </div>
 
     <!-- DAY 1 -->
     <div class="day-header">
-      <span>Day 1：10/10 (六) 竺扶燒味 ➔ 尖沙咀手信 ➔ 花園街市集 ➔ 廟街 ➔ 天星夜航</span>
-      <small>九龍縱貫線</small>
+      <span>Day 1：11/17 (二) 上環入住 ➔ 買小熊餅乾 ➔ 啟德看 BIGBANG</span>
+      <small>17:00 準時進場</small>
     </div>
 
     <!-- 1-1 -->
     <div class="card">
       <div class="card-top">
-        <span class="time-badge">13:30 - 14:30</span>
+        <span class="time-badge">11:35 - 13:40</span>
       </div>
-      <div class="card-title">抵達香港機場 ➔ 金鐘毅風辦理入住</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>機場巴士總站搭乘 <strong>城巴 A11</strong>（約 40～50 分鐘，八達通 HK$41.9）。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>於「<strong>盧押道，軒尼詩道</strong>」下車，順車流過分域街路口，步行 3 分鐘抵達飯店放行李。</div>
+      <div class="card-title">去程航班：大灣區航空 HB703（波音 737）</div>
+      <div class="info-row"><span class="info-label">出發抵達：</span><strong>11:35</strong> 臺灣桃園國際機場 <strong>T1</strong> ➔ <strong>13:40</strong> 香港國際機場 <strong>T1</strong>（飛行 2 小時 5 分）。</div>
+      <div class="tips-box">
+        <strong>極速出關秘技</strong>：大灣區航空基本票含 7kg 手提行李，建議僅帶<strong>手提登機箱（不托運）</strong>，下機直接過海關，省下 30 分鐘等行李時間！
+      </div>
     </div>
 
     <!-- 1-2 -->
     <div class="card">
       <div class="card-top">
-        <span class="time-badge">14:45 - 15:45</span>
+        <span class="time-badge">13:45 - 14:40</span>
       </div>
-      <div class="card-title">竺扶大班燒味（抵港第一餐盛宴）</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>飯店出門沿莊士敦道向東步行至三角街（或搭東行叮叮車 1 站至柯布連道）。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>全程步行約 8～10 分鐘直達三角街門市。</div>
+      <div class="card-title">香港機場 T1 ➔ 上環薈麗酒店 Check-in</div>
+      <div class="info-row"><span class="info-label">首選快綫：</span>搭<strong>機場快綫</strong>（24 分鐘，HK$105）至「香港站」，轉乘<strong>的士</strong> 5 分鐘（約 HK$35）直達干諾道西 7 號。</div>
+      <div class="info-row"><span class="info-label">門口巴士：</span>搭 <strong>城巴 A11</strong>（約 40 分鐘，HK$41.9）至「港澳碼頭，干諾道中」下車，步行 3 分鐘即達。</div>
       <div class="tips-box">
-        <strong>竺扶大班燒味</strong>：米其林推薦！剛出爐必吃<strong>大班厚切黑焦糖蜜汁叉燒、極脆五花腩燒肉</strong>，外皮焦脆爆香、肉質鮮嫩多汁！
+        辦理入住、換上應援服裝、檢查皇冠手燈電池與<strong>實體門票</strong>。
       </div>
       <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=竺扶大班燒味+灣仔三角街" target="_blank">竺扶大班燒味 (灣仔)</a>
+        <a class="map-btn teal" href="https://www.google.com/maps/search/?api=1&query=Lander+Grand+Hotel+香港上環干諾道西7號" target="_blank">上環薈麗酒店 (干諾道西7號)</a>
       </div>
     </div>
 
     <!-- 1-3 -->
     <div class="card">
       <div class="card-top">
-        <span class="time-badge">16:00 - 17:00</span>
+        <span class="time-badge">14:45 - 15:25</span>
       </div>
-      <div class="card-title">尖沙咀手信採買 ＆ 生煎包</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>步行至灣仔站或金鐘站，搭<strong>港鐵荃灣綫</strong>直達尖沙咀站。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>尖沙咀站 <strong>N5 出口</strong>美麗都大廈；步行 3 分鐘至祥興記。</div>
+      <div class="card-title">採買珍妮曲奇聰明小熊（上環店） ➔ 放回飯店</div>
+      <div class="info-row"><span class="info-label">站點步行：</span>自飯店步行約 6～8 分鐘至<strong>上環永和街 15 號</strong>（港鐵上環站 E2 出口旁）；買完直接走回飯店放妥。</div>
       <div class="tips-box">
-        • <strong>Jenny Bakery（珍妮曲奇）</strong>：美麗都大廈 1 樓買經典四味奶油曲奇（<strong>只收現金</strong>）。<br>
-        • <strong>祥興記上海生煎包</strong>：底脆如餅乾、爆汁鮮甜（招牌／麻辣）。
+        <strong>只收港幣現金！</strong>（營業時間 10:00–19:00）。上環店排隊人潮比尖沙咀少很多，買完放回飯店房間，晚上看演唱會完全兩手空空零負擔！
       </div>
       <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Jenny+Bakery+Tsim+Sha+Tsui" target="_blank">珍妮曲奇 (尖沙咀)</a>
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=祥興記上海生煎包+尖沙咀" target="_blank">祥興記生煎包</a>
+        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=珍妮曲奇聰明小熊+上環永和街15號" target="_blank">珍妮曲奇 (上環永和街店)</a>
       </div>
     </div>
 
     <!-- 1-4 -->
     <div class="card">
       <div class="card-top">
-        <span class="time-badge">17:00 - 18:15</span>
+        <span class="time-badge">15:30 - 16:40</span>
       </div>
-      <div class="card-title">星光大道海濱 ＆ K11 MUSEA 7F 觀景台</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>自彌敦道往海旁南行，經地下通道抵達星光大道與 K11 MUSEA。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>步行約 5 分鐘抵達海濱。</div>
+      <div class="card-title">輕裝出發 ➔ 啟德體育園 ＆ 晚餐補給</div>
+      <div class="info-row"><span class="info-label">港鐵路線：</span>步行 4 分鐘至<strong>上環站 C 出口</strong> ➔ 港島綫至金鐘轉荃灣綫至尖沙咀，走地下通道至尖東站轉<strong>屯馬綫</strong>至「<strong>宋皇臺站 D 出口</strong>」（步行 5 分鐘至主場館）。</div>
+      <div class="info-row"><span class="info-label">的士直達：</span>干諾道西直接攔的士經西隧前往啟德主場館（車程約 20 分鐘，約 HK$130～150，多人分攤最推薦）。</div>
       <div class="tips-box">
-        • <strong>星光大道</strong>：漫步維港岸邊，尋找李小龍銅像與明星掌印。<br>
-        • <strong>K11 MUSEA 7F 觀景平台</strong>：電梯直上 7 樓戶外花園，<strong>免費 180 度開闊俯瞰維港夕陽天際線</strong>。
+        進場前先於<strong>啟德零售館 2</strong> 或 <strong>AIRSIDE 商場</strong>快速吃晚餐、把水喝完（水瓶不可帶入場）並上洗手間。
       </div>
       <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=星光大道+香港" target="_blank">星光大道</a>
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=K11+MUSEA+香港" target="_blank">K11 MUSEA (7F觀景台)</a>
+        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=AIRSIDE+啟德" target="_blank">AIRSIDE 商場</a>
       </div>
     </div>
 
     <!-- 1-5 -->
     <div class="card">
       <div class="card-top">
-        <span class="time-badge">18:30 - 19:45</span>
+        <span class="time-badge">17:00 - 22:00</span>
       </div>
-      <div class="card-title">旺角花園街（波鞋街） ＆ 彩鳳美食</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>尖沙咀站搭<strong>港鐵荃灣綫</strong>北行直達「<strong>旺角站</strong>」。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>旺角站 <strong>E2 出口</strong>，步行 3 分鐘進入花園街，順路漫步至登打士街。</div>
+      <div class="card-title">🔥 17:00 準時進場 ＆ BIGBANG 2026 演唱會</div>
+      <div class="info-row"><span class="info-label">場館地點：</span><strong>啟德主場館（Kai Tak Stadium）</strong>外圍安檢閘口。</div>
       <div class="tips-box">
-        • <strong>花園街</strong>：香港代表性波鞋街與在地平民市集。<br>
-        • <strong>彩鳳美食</strong>：登打士街 55 號，必吃<strong>香煎厚鵝肝多士、特色酥脆炸串</strong>。
+        17:00 開放進場安檢，提早入場拍照、適應場地，迎接全場皇冠燈海與 BIGBANG 震撼舞台！
       </div>
       <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=花園街+旺角" target="_blank">旺角花園街</a>
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=彩鳳美食+旺角登打士街55號" target="_blank">彩鳳美食 (登打士街)</a>
+        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=啟德主場館+Kai+Tak+Stadium" target="_blank">啟德主場館</a>
       </div>
     </div>
 
     <!-- 1-6 -->
     <div class="card">
       <div class="card-top">
-        <span class="time-badge">20:00 - 20:45</span>
+        <span class="time-badge">22:00 - 23:15</span>
       </div>
-      <div class="card-title">油麻地廟街夜市大排檔</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>沿登打士街轉入廟街，向南步行約 5 分鐘。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>廟街與鴉打街交界周邊。</div>
+      <div class="card-title">散場返回上環薈麗酒店 ＆ 宵夜</div>
+      <div class="info-row"><span class="info-label">返程路線：</span>搭<strong>屯馬綫</strong>至「尖東/尖沙咀站」轉荃灣綫到「金鐘站」，再轉港島綫至「<strong>上環站 C 出口</strong>」（步行 4 分鐘回飯店）；或人潮稍退後搭的士過海回干諾道西 7 號。</div>
       <div class="tips-box">
-        • <strong>興記煲仔飯</strong>：炭火現煲滑雞臘腸煲仔飯（淋甜醬油刮焦香鍋巴）、酥炸蠔餅。<br>
-        • <strong>廟街小食</strong>：炸牛肉丸、雞肉串配特製辣醬；街角買<strong>富豪雪糕車</strong>軟雪糕。
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=興記菜館+煲仔飯+廟街" target="_blank">興記煲仔飯</a>
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=廟街小食+油麻地" target="_blank">廟街小食</a>
-      </div>
-    </div>
-
-    <!-- 1-7 -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">20:45 - 21:30</span>
-      </div>
-      <div class="card-title">麥文記麵家（佐敦米其林宵夜）</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>自廟街牌坊沿白加士街向南步行約 6～8 分鐘（或搭地鐵 1 站至佐敦站 C2 出口）。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>佐敦白加士街 51 號。</div>
-      <div class="tips-box">
-        <strong>麥文記麵家</strong>：米其林推薦！必吃<strong>首創全蝦雲吞麵</strong>（粒粒鮮蝦、皮薄爽脆不包豬肉）、南乳豬手、蝦子撈麵。
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=麥文記麵家+佐敦白加士街51號" target="_blank">麥文記麵家 (佐敦)</a>
-      </div>
-    </div>
-
-    <!-- 1-8 -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">21:35 - 22:15</span>
-      </div>
-      <div class="card-title">重頭戲：天星小輪夜航 ➔ 叮叮車回金鐘毅風</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>佐敦搭港鐵 1 站至尖沙咀站（L6 出口），步行至鐘樓天星碼頭。搭<strong>往灣仔航線</strong>（末班 22:50）。</div>
-      <div class="info-row"><span class="info-label">接駁飯店：</span>灣仔碼頭沿天橋至「莊士敦道/菲林明道」搭<strong>西行叮叮車</strong> 2 站至「機利臣街 41W」下車，過馬路回飯店。</div>
-      <div class="tips-box">
-        坐在天星小輪上層甲板迎海風，正對港島百萬霓虹天際線橫渡維港！下船轉電車省力又浪漫。
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=前九廣鐵路鐘樓" target="_blank">尖沙咀鐘樓</a>
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=尖沙咀天星碼頭" target="_blank">尖沙咀天星碼頭</a>
+        可在上環蘇杭街／禧利街附近吃碗糖水或宵夜，回房間將小熊餅乾鐵盒與隨身行李整理好，設定好清晨鬧鐘。
       </div>
     </div>
 
     <!-- DAY 2 -->
     <div class="day-header">
-      <span>Day 2：10/11 (日) 港島晨光 ➔ 一點心 ➔ 中環大館 ➔ 檸檬王回飯店放 ➔ 深水埗公和 ➔ 女人街大排檔</span>
-      <small>港島 ＆ 香港友人相聚</small>
+      <span>Day 2：11/18 (三) 清晨直奔機場 T2 ➔ 08:45 起飛返抵桃園</span>
+      <small>早班機返台</small>
     </div>
 
     <!-- 2-1 -->
     <div class="card">
       <div class="card-top">
-        <span class="time-badge">08:30 - 09:45</span>
+        <span class="time-badge">05:45 - 06:00</span>
       </div>
-      <div class="card-title">我杯茶（Our Cup of Tea）在地港式早餐</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>出飯店沿軒尼詩道往東走，右轉春園街，<strong>全程步行僅 5～7 分鐘</strong>。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>灣仔春園街門市。</div>
-      <div class="tips-box">
-        <strong>我杯茶</strong>：全港公認茶味極濃、回甘醇厚的<strong>招牌熱奶茶</strong>，搭配流沙西多士或厚煎滑蛋三文治。
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=我杯茶+Our+Cup+of+Tea+灣仔" target="_blank">我杯茶 (春園街)</a>
-      </div>
+      <div class="card-title">起床整裝 ➔ 薈麗酒店快速退房</div>
+      <div class="info-row"><span class="info-label">注意事項：</span>珍妮曲奇鐵盒屬固體糕點，<strong>可直接放入手提登機箱帶上飛機</strong>，免托運不怕摔碎。</div>
     </div>
 
     <!-- 2-2 -->
     <div class="card">
       <div class="card-top">
-        <span class="time-badge">10:00 - 11:00</span>
+        <span class="time-badge">06:00 - 06:45</span>
       </div>
-      <div class="card-title">銅鑼灣站 F1 街拍 ＆ Hashtag B 買蛋撻</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>莊士敦道「<strong>修頓球場 46E</strong>」搭<strong>東行叮叮車</strong>至「百德新街 52E」。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>步行 2 分鐘至希慎廣場 F1 出口；再走 2 分鐘至利園山道。</div>
-      <div class="tips-box">
-        • <strong>銅鑼灣站 F1 出口</strong>：希慎廣場前捕捉香港最具代表性的雙層巴士與密集人潮港風大片。<br>
-        • <strong>Hashtag B</strong>：爆紅必買！招牌<strong>拿破崙焦糖千層花朵撻</strong>。
-      </div>
+      <div class="card-title">上環薈麗酒店 ➔ 香港國際機場 T2（三種方案）</div>
+      <div class="info-row"><span class="info-label">方案 A：</span>樓下搭<strong>的士 5 分鐘</strong>（約 HK$35）直達「<strong>港鐵香港站</strong>」，轉乘 <strong>06:00 或 06:10 機場快綫</strong>（24 分鐘直達航廈，最準時）。</div>
+      <div class="info-row"><span class="info-label">方案 B：</span>步行 2 分鐘至干諾道西「<strong>修打蘭街</strong>」站搭 <strong>城巴 A11</strong>（清晨班次約 35～40 分鐘直達航廈，HK$41.9，免轉車最省錢）。</div>
+      <div class="info-row"><span class="info-label">方案 C：</span>樓下直接搭的士經西隧直達機場（約 28 分鐘，約 HK$300～330）。</div>
       <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=港鐵銅鑼灣站+F1出口" target="_blank">銅鑼灣站 F1 出口</a>
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Hashtag+B+銅鑼灣利園山道73號" target="_blank">Hashtag B (銅鑼灣店)</a>
+        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=港鐵香港站" target="_blank">港鐵香港站 (機場快綫)</a>
+        <a class="map-btn teal" href="https://www.google.com/maps/search/?api=1&query=修打蘭街+干諾道西+巴士站" target="_blank">城巴A11巴士站 (修打蘭街)</a>
       </div>
     </div>
 
     <!-- 2-3 -->
     <div class="card">
       <div class="card-top">
-        <span class="time-badge">11:15 - 12:45</span>
+        <span class="time-badge">06:45 - 10:35</span>
       </div>
-      <div class="card-title">一點心（One Dim Sum 中環店午餐）</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>銅鑼灣搭<strong>西行叮叮車</strong>一路直達中環「<strong>租庇利街 27W</strong>」下車。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>下車後步行 3 分鐘至威靈頓街/半山電梯旁。</div>
+      <div class="card-title">機場 T2 報到 ➔ 08:45 HB702 起飛 ➔ 10:35 返抵桃園</div>
+      <div class="info-row"><span class="info-label">回程航班：</span>大灣區航空 <strong>HB702</strong>（波音 737）｜<strong>08:45</strong> 香港國際機場 <strong>T2</strong> 起飛 ➔ <strong>10:35</strong> 抵達臺灣桃園國際機場 <strong>T1</strong>（飛行 1 小時 50 分）。</div>
       <div class="tips-box">
-        <strong>午餐吃一點心</strong>：米其林推薦超值港點！必吃<strong>鮮蝦腐皮卷、陳皮牛肉球、晶瑩鮮蝦餃、蟹黃蒸燒賣、叉燒包</strong>。
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=一點心+One+Dim+Sum+中環" target="_blank">一點心 (中環店)</a>
-      </div>
-    </div>
-
-    <!-- 2-4 -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">13:00 - 14:45</span>
-      </div>
-      <div class="card-title">中環半山扶手電梯 ➔ 大館古蹟群</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>一點心旁搭乘半山自動扶手電梯，向上直達荷李活道。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>步行約 2 分鐘直達大館正門。</div>
-      <div class="tips-box">
-        <strong>大館（Tai Kwun）</strong>：中區警署古蹟群活化，參觀紅磚建築、歷史展區與檢閱廣場，極具歷史與電影美感。
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=中環半山自動扶手電梯" target="_blank">半山自動扶手電梯</a>
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=大館+Tai+Kwun" target="_blank">大館 (Tai Kwun)</a>
-      </div>
-    </div>
-
-    <!-- 2-5 -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">14:45 - 16:00</span>
-      </div>
-      <div class="card-title">錦綉唐朝 ＆ 嘉咸街壁畫 ＆ Bakehouse</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>自大館順斜坡向下漫步（完全順坡下行，省力不爬坡）。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>大館 ➔ 錦綉唐朝（2分鐘）➔ 壁畫街（2分鐘）➔ Bakehouse（3分鐘）。</div>
-      <div class="tips-box">
-        • <strong>錦綉唐朝（Dynasty）</strong>：挖寶合金香港雙層巴士、雪糕車、小巴水牌紀念品。<br>
-        • <strong>嘉咸街壁畫街</strong>：經典舊香港唐樓彩繪牆街拍打卡。<br>
-        • <strong>Bakehouse（中環店）</strong>：排隊外帶招牌天然酵母「酸種蛋撻」與肉桂捲。
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=錦綉唐朝+中環" target="_blank">錦綉唐朝紀念品</a>
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=嘉咸街壁畫" target="_blank">嘉咸街壁畫街</a>
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Bakehouse+中環士丹頓街" target="_blank">Bakehouse (中環)</a>
-      </div>
-    </div>
-
-    <!-- 2-6 (中環街市 ➔ 永吉街檸檬王) -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">16:00 - 17:20</span>
-      </div>
-      <div class="card-title">中環街市漫遊 ➔ 永吉街檸檬王採買</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>順天橋系統向下步行至中環街市；逛完穿過德輔道中步行 2 分鐘直達永吉街。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>中環街市 ➔ 永吉街檸檬王（步行僅約 2～3 分鐘）。</div>
-      <div class="tips-box">
-        • <strong>中環街市</strong>：80年歷史三級歷史建築活化，拍水磨石復古無階梯樓梯、逛文創選物。<br>
-        • <strong>永吉街檸檬王</strong>：必買！招牌<strong>甘草檸檬蜜餞、化痰果</strong>，長輩朋友人氣伴手禮！
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=中環街市+Central+Market" target="_blank">中環街市</a>
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=永吉街檸檬王+上環" target="_blank">永吉街檸檬王</a>
-      </div>
-    </div>
-
-    <!-- 2-7 (回飯店放戰利品) -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">17:20 - 17:50</span>
-      </div>
-      <div class="card-title">搭叮叮車回金鐘毅風放戰利品 ＆ 稍作小憩</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>德輔道中「<strong>機利文街 25W</strong>」電車站搭乘<strong>東行叮叮車</strong>。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>於「<strong>分域街 54E</strong>」下車，步行 1 分鐘回金鐘毅風放戰利品。</div>
-      <div class="tips-box">
-        <strong>超省力貼心安排！</strong> 將下午採買的<strong>Bakehouse 蛋撻、錦綉唐朝車模、檸檬王蜜餞</strong>先放回飯店房間，上洗手間、喝水歇腿，隨後<strong>兩手空空輕裝前往九龍聚餐</strong>！
-      </div>
-      <div class="btn-group">
-        <a class="map-btn teal" href="https://www.google.com/maps/search/?api=1&query=YING’nFLO+Wesley+Admiralty+Hong+Kong" target="_blank">金鐘毅風飯店 (放東西)</a>
-      </div>
-    </div>
-
-    <!-- 2-8 -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">17:50 - 18:45</span>
-      </div>
-      <div class="card-title">深水埗：百年老字號公和荳品廠（輕裝吃甜品）</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>飯店走太古廣場地下通道至金鐘站，搭<strong>港鐵荃灣綫</strong>直達「<strong>深水埗站</strong>」。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>深水埗站 <strong>B2 出口</strong>，出站直行北河街，步行 2 分鐘即達。</div>
-      <div class="tips-box">
-        <strong>公和荳品廠</strong>：米其林街頭小吃推薦！必吃滑嫩傳統<strong>冰/熱豆腐花</strong>（撒黃糖粉）、現煎香脆<strong>釀豆腐</strong>與香濃無糖豆漿。
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=公和荳品廠+深水埗北河街" target="_blank">公和荳品廠 (深水埗)</a>
-      </div>
-    </div>
-
-    <!-- 2-9 -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">19:00 - 22:00</span>
-      </div>
-      <div class="card-title">旺角女人街大排檔盛宴（香港友人介紹並陪同）</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>深水埗搭<strong>港鐵荃灣綫</strong>南行 2 站至「<strong>旺角站</strong>」<strong>E2 出口</strong>，步行 2 分鐘直達女人街。</div>
-      <div class="info-row"><span class="info-label">返程路線：</span>吃完自旺角站搭<strong>港鐵荃灣綫</strong>直回「金鐘站」，走太古廣場地下通道回飯店。</div>
-      <div class="tips-box">
-        <strong>在地好友帶路！體驗最正宗女人街（通菜街）大排檔鑊氣小菜！</strong><br>
-        由香港朋友推薦地道招牌：<strong>黑椒薯仔牛柳粒、避風塘炒蟹、生炒排骨、豉椒炒蜆、椒鹽九吐魚</strong>，配冰涼啤酒，大呼過癮！
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=女人街+旺角通菜街" target="_blank">旺角女人街 (通菜街)</a>
-        <a class="map-btn teal" href="https://www.google.com/maps/search/?api=1&query=旺角熟食中心+花園街" target="_blank">旺角熟食中心大排檔 (備選)</a>
-      </div>
-    </div>
-
-    <!-- DAY 3 -->
-    <div class="day-header">
-      <span>Day 3：10/12 (一) 上環牛腩 ➔ 發達叉燒午餐 ➔ 太平山頂 ➔ 機場返程</span>
-      <small>老味與百萬夜景</small>
-    </div>
-
-    <!-- 3-1 -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">09:00 - 10:15</span>
-      </div>
-      <div class="card-title">生記清湯牛腩麵家（上環早餐）</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>飯店門口搭<strong>西行叮叮車</strong>至上環（或港鐵至上環站 A2 出口）。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>於「<strong>禧利街 33W</strong>」下車，沿禧利街步行 2 分鐘至歌賦街口。</div>
-      <div class="tips-box">
-        <strong>生記清湯牛腩麵家</strong>：上環超人氣老店！必點招牌<strong>清湯爽腩/坑腩麵、鮮美牛雜湯麵</strong>，湯頭鮮甜醇厚、牛腩軟嫩入味。
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=生記清湯牛腩麵家" target="_blank">生記清湯牛腩麵家</a>
-      </div>
-    </div>
-
-    <!-- 3-2 -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">10:15 - 11:30</span>
-      </div>
-      <div class="card-title">西營盤海味街 ＆ 鄧海滿記 ➔ 回飯店退房寄行李</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>由上環搭西行叮叮車 3 站至西營盤「<strong>東邊街 49W</strong>」下車。採買後搭電車回飯店。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>下車後沿德輔道西步行 3 分鐘。<strong>11:30 前返回金鐘毅風退房，大件行李免費寄存前台</strong>。</div>
-      <div class="tips-box">
-        <strong>鄧海滿記</strong>：西營盤老字號！採買特級全蛋蝦子麵、海味乾貨伴手禮。
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=鄧海滿記+西營盤德輔道西" target="_blank">鄧海滿記 (西營盤)</a>
-      </div>
-    </div>
-
-    <!-- 3-3 -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">12:00 - 13:30</span>
-      </div>
-      <div class="card-title">發達叉燒（Fat Tat 午餐） ＆ Softunder 蛋撻</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>飯店出門步行 3 分鐘至聯發街／莊士敦道口。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>步行約 3 分鐘即達（就在飯店旁超近！）。</div>
-      <div class="tips-box">
-        • <strong>發達叉燒（午餐）</strong>：名店鋒膳副牌！必點<strong>西班牙栗飼蜜汁叉燒拼茅台醬油雞飯、蘭皇滑蛋叉燒飯</strong>與老火例湯。<br>
-        • <strong>Softunder Bakery</strong>：轉角順手買 3.0 極薄千層脆皮蛋撻與開心果可頌。
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=發達叉燒+灣仔" target="_blank">發達叉燒 (Fat Tat)</a>
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Softunder+Bakery+灣仔" target="_blank">Softunder Bakery</a>
-      </div>
-    </div>
-
-    <!-- 3-4 (已移除檸檬王，更悠閒) -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">13:45 - 15:00</span>
-      </div>
-      <div class="card-title">C dessert（聰少甜品午茶享受）</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>步行至莊士敦道分店（近飯店）或中環士丹利街店。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>步行約 5 分鐘抵達。</div>
-      <div class="tips-box">
-        <strong>C dessert</strong>：招牌第一名<strong>「龍眼椰果冰」</strong>（原粒果肉冰沙）與<strong>「楊枝甘露」</strong>。吃完冰後身心舒暢！
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=C+dessert+灣仔莊士敦道" target="_blank">C dessert (聰少甜品)</a>
-      </div>
-    </div>
-
-    <!-- 3-5 -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">15:30 - 16:15</span>
-      </div>
-      <div class="card-title">中環海濱長廊輕散步</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>自街區經人行天橋系統往碼頭方向走。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>步行約 8～10 分鐘抵達海濱摩天輪一帶。</div>
-      <div class="tips-box">
-        感受維港白天海風與高樓天際線，拍拍照、悠閒消消化。
-      </div>
-    </div>
-
-    <!-- 3-6 -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">16:30 - 19:15</span>
-      </div>
-      <div class="card-title">太平山頂纜車 ＆ 凌霄閣摩天台 428 百萬夜景</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>中環直接攔<strong>的士</strong>直達花園道纜車總站（約 6 分鐘，HK$35）；或搭 <strong>新巴 15C 穿梭巴士</strong>。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>憑預購電子票掃碼進站搭第六代綠色復古纜車。</div>
-      <div class="tips-box">
-        • <strong>搭車秘技</strong>：上山列車務必搶坐<strong>右側靠窗</strong>，俯瞰中環摩天樓拔地而起。<br>
-        • 17:45～18:15 於摩天台 428 迎夕陽與萬家燈火（商場內亦有<strong>錦綉唐朝</strong>可補買紀念品）。
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=山頂纜車花園道總站" target="_blank">花園道纜車站</a>
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=凌霄閣摩天台428" target="_blank">凌霄閣摩天台 428</a>
-      </div>
-    </div>
-
-    <!-- 3-7 -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">19:15 - 21:00</span>
-      </div>
-      <div class="card-title">城巴 15 號下山 ➔ 飯店取行李整裝</div>
-      <div class="info-row"><span class="info-label">交通方式：</span>於凌霄閣地下巴士總站搭乘 <strong>城巴 15 號</strong>（直達金鐘德立街，約 25 分鐘）。</div>
-      <div class="info-row"><span class="info-label">站點步行：</span>於「金鐘站（德立街）」下車，穿過太古廣場地下通道 6 分鐘回飯店大廳整理行李。</div>
-      <div class="tips-box">
-        在大廳更換輕便搭機便服，將珍妮曲奇、蛋撻、車模、檸檬王與蝦子麵收妥進行李箱平放托運。
-      </div>
-    </div>
-
-    <!-- 3-8 -->
-    <div class="card">
-      <div class="card-top">
-        <span class="time-badge">21:00 - 23:50</span>
-      </div>
-      <div class="card-title">前往機場（兩種方式） ➔ 23:50 起飛返台</div>
-      <div class="info-row">
-        <span class="info-label">首選推薦：</span>
-        <span>飯店門口搭<strong>的士</strong>（約 6 分鐘，HK$45）至「<strong>港鐵香港站</strong>」，轉乘<strong>機場快綫</strong>（每 10 分鐘一班，24 分鐘直達機場航廈）。</span>
-      </div>
-      <div class="info-row" style="background: #e8f4f8; padding: 6px 8px; border-radius: 4px; margin-top: 4px;">
-        <span class="info-label" style="color: #0c5460;">平價備選：</span>
-        <span style="color: #0c5460;">自金鐘毅風<strong>步行 3 分鐘</strong>至軒尼詩道「<strong>盧押道，軒尼詩道</strong>」巴士站，搭乘 <strong>城巴 A11 直達機場</strong>（車程約 45～55 分鐘，八達通 HK$41.9，直達客運大樓免轉車）。</span>
-      </div>
-      <div class="tips-box" style="margin-top: 8px;">
-        <strong>23:50 大灣區航空 HB505 起飛返回台北桃園 T1</strong>，兩者皆能於 21:50 前抵達機場航廈，預留充分時間自助託運與過安檢！
-      </div>
-      <div class="btn-group">
-        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=港鐵香港站" target="_blank">港鐵香港站 (機場快綫)</a>
-        <a class="map-btn teal" href="https://www.google.com/maps/search/?api=1&query=盧押道+軒尼詩道+巴士站" target="_blank">城巴A11巴士站 (盧押道)</a>
+        <strong>特別提醒：回程在「香港機場第二航廈 (T2)」報到</strong>！請於 06:45 抵達機場依現場指示前往 T2 大灣區航空櫃檯辦理登機與安檢，禁區內可享用港式早餐與採買手信。
       </div>
     </div>
 
